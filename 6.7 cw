@@ -1,0 +1,30 @@
+import java.util.ArrayList;
+import java.util.ListIterator;
+
+public class recipe
+{
+    public static void main (String[] args)
+    {
+        ArrayList<String> ingred = new ArrayList<String>(); //establish array with ability to add into it
+        
+        ingred.add("flour");
+        ingred.add("sugar");
+        ingred.add("cocoa");
+        ingred.add("oil");
+        ingred.add("butter");
+        ingred.add("eggs");
+        ingred.add("baking soda");
+        //adds string values into the array without printing
+        
+        System.out.println("Time to make a chocolate cake, using the following, " + ingred.size() + " ingredients: ");//print starter sentence with size of array
+        
+        ListIterator iterator = ingred.listIterator(); //allows interator to be functional
+        
+        while(iterator.hasNext())//when the interator has the next value
+        {
+            System.out.println(iterator.next());//print the next value
+        }//close while loop
+
+    }//close void
+}//close class
+//noah triche per 5
